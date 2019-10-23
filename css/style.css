@@ -1,0 +1,85 @@
+
+/*   Regles style générales   */
+
+body {
+    color: #ffe81f;
+    background: url("../img/backgroundre.jpg") no-repeat fixed center; 
+    font-family: 'Electrolize', sans-serif;
+    margin: 10px;
+}
+div {
+    border: 1px solid #ffe81f;
+    padding: 10px;
+}
+div > header {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*   ID's et Classes   */
+
+#foot {
+    border: 1px solid #ffe81f;
+    margin-top: 50px;
+}
+
+.hide {
+   display: none; 
+}
+
+/*   MEDIA QUERY   */
+
+/* Smartphones */
+@media only screen 
+and (min-width : 320px) 
+and (max-width : 480px) {
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 8fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+}
+}
+/* Tablette*/
+@media only screen 
+and (min-width : 768px) 
+and (max-width : 1223px) {
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;   
+}
+}
+
+/* Pc et Laptop */
+@media only screen 
+and (min-width : 1224px) {
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+}
+/* Écran supérieur*/
+@media only screen 
+and (min-width : 1824px) {
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+}
