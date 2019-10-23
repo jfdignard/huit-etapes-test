@@ -33,6 +33,10 @@ img {
    display: none; 
 }
 
+#rouge {
+    background-color: crimson;
+}
+
 /*   MEDIA QUERY   */
 
 /* Smartphones */
